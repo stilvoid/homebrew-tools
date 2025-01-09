@@ -2,8 +2,8 @@
 class RetroSort < Formula
   desc "Command-line tool to sort files into a folder layout for use with retro hardware"
   homepage "https://github.com/stilvoid/retro-sort"
-  url "https://github.com/stilvoid/retro-sort/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "5dc3eef92e449056f890ec7633d3e4d5b214edfcd83bde6480257c8c82ff8cf1"
+  url "https://github.com/stilvoid/retro-sort/archive/refs/tags/v0.1.3.tar.gz"
+  sha256 "1d1a2fc6d8525ff1181d730a25be90742888c59d2eb08c8c710756b5b6e276a7"
   license "MIT"
 
   depends_on "go" => :build
