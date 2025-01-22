@@ -1,14 +1,14 @@
 class Shue < Formula
   desc "Command-line tool to modify and convert colour representations, e.g. hex to rgb"
   homepage "https://github.com/stilvoid/shue"
-  url "https://github.com/stilvoid/shue/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "cc2413ff5754b035246a1c8b8ed5a793a933ba7ca5954bda6f9a0480ea094d97"
-  license "MIT"
+  url "https://github.com/stilvoid/shue/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "f4ae2cae629592a40900ed4419b5be8030855e1b8618084f7db438a7dbb765a2"
+  license "GPL-3.0-only"
 
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w")
+    system "go", "build", *std_go_args(ldflags: "-s -w -X main.version=#{version}"), "-o shue", "./cmd/main.go"
   end
 
   test do
