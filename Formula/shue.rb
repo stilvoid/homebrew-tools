@@ -3,7 +3,7 @@ class Shue < Formula
   homepage "https://github.com/stilvoid/shue"
   url "https://github.com/stilvoid/shue/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "f4ae2cae629592a40900ed4419b5be8030855e1b8618084f7db438a7dbb765a2"
-  license "GPL-3.0-only"
+  license "GPL-3.0-or-later"
 
   depends_on "go" => :build
 
