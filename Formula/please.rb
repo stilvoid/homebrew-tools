@@ -1,8 +1,8 @@
 class Please < Formula
   desc "Command-line tool for manipulating structured data and working with web APIs"
   homepage "https://github.com/stilvoid/please"
-  url "https://github.com/stilvoid/please/archive/refs/tags/v2.0.0.tar.gz"
-  sha256 "2c1bf73695a71865d9ef85b191af18dab465396b7582c9e183bb0c5b436a35dc"
+  url "https://github.com/stilvoid/please/archive/refs/tags/v2.0.1.tar.gz"
+  sha256 "851689e595bb5f6a486a6f973b454c83836c4cbead40be118be9b64e24dc2ffc"
   license "GPL-3.0-or-later"
 
   depends_on "go" => :build
