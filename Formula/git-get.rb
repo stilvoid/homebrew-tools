@@ -11,6 +11,6 @@ class GitGet < Formula
   end
 
   test do
-    assert_equal "Usage: git get <repository>", shell_output("#{bin}/git-get -h").lines.first.strip
+    assert_equal "Usage: git get [--print-path] [--location <dir>] <repository> [<args>]", shell_output("#{bin}/git-get -h").lines.first.strip
   end
 end
