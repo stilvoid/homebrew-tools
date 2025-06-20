@@ -1,8 +1,8 @@
 class GitGet < Formula
   desc "Opinionated git extension that helps you keep your code folder in order"
   homepage "https://github.com/stilvoid/git-get"
-  url "https://github.com/stilvoid/git-get/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "644a393041b4d70f97c544003bda805f59d81ac8a306df05605366f2f7e6edfc"
+  url "https://github.com/stilvoid/git-get/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "59579d82cb6d184d1c9b030c3dcb9ab35b22e3ddd8e55433e7ccb67eb53e4e4c"
   license "MIT"
 
   def install
@@ -11,6 +11,7 @@ class GitGet < Formula
   end
 
   test do
-    assert_equal "Usage: git get <repository>", shell_output("#{bin}/git-get -h").lines.first.strip
+    assert_equal "Usage: git get [--print-path] [--location <dir>] <repository> [<args>]", \
+                 shell_output("#{bin}/git-get -h").lines.first.strip
   end
 end
