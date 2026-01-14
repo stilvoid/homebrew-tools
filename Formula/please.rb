@@ -5,6 +5,8 @@ class Please < Formula
   sha256 "851689e595bb5f6a486a6f973b454c83836c4cbead40be118be9b64e24dc2ffc"
   license "GPL-3.0-or-later"
 
+  deprecate! date: "2026-01-14", because: :deprecated_upstream, replacement_formula: "nushell"
+
   depends_on "go" => :build
 
   def install
